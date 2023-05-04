@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import MenuIcon from '@mui/icons-material/Menu';
 import "../styles/Navbar.css";
 
 function Navbar() {
@@ -23,8 +24,7 @@ function Navbar() {
           () => {
             setExpandNavbar((prev) => !prev)
         }}>
-          {/* TODO: Use ReorderIcon */}
-          Menu
+          <MenuIcon />
         </button>
       </div>
       <div className="links">
